@@ -31,7 +31,12 @@
   border-color:transparent !important;
   font-size:18px;
 }
+#iconu-user{
+  position: relative;
+  display: inline-block;
 
+
+}
 nav#transmenu.navbar.navbar-inverse.navbar-fixed-top{
   background:#091645 !important;
   font-size:15px;
@@ -75,7 +80,7 @@ body{
 .jumbotron{
   margin-right:auto;
   margin-left:auto;
-  max-width:991px;
+
   padding-top:1px;
   padding-bottom:1px;
   margin-bottom:10px;
@@ -91,18 +96,21 @@ body{
   }
 }
 
-div#recent{
+/*div.row{
+  max-width:991px;
+}*/
+/*div#recent{
   margin-right:auto;
   margin-left:auto;
   max-width:991px;
   margin-top:-13px;
 }
-
+*/
 div.posts{
   margin:-12px 10px 10px 10px;
 }
 
-div#post.jumbotron{
+div#ai-suggestions,#recent,#post.jumbotron{
   max-width:991px;
   margin-right:auto;
   margin-left:auto;
