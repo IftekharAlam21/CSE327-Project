@@ -56,12 +56,20 @@ add-on .input-group-btn > .btn{
   border-color:#cccccc;
 }
 
+
 body{
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:14px;
   line-height:1;
   color:#333;
   background-color:#fff;
+}
+
+.searchbar{
+  max-width: 991px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 5px;
 }
 
 .jumbotron{
@@ -159,3 +167,6 @@ h1#footer-text.text-right{
   margin:5px;
 }
 
+h1#herotext.hero-title{
+  font-size:35px;
+}
