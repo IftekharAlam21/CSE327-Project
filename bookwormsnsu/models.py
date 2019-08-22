@@ -1,8 +1,11 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 # Create your models here.
-class User(models.Model):
-    name= models.CharField(max_length=120)
-    email=models.EmailField(max_length=300,unique=True)
-    student_id= models.CharField(max_length=10,unique=True)
-    topics= models.CharField(max_length=420)
+class UserProfileInfo(models.Model):
+    user= models.OneToOneField(User,on_delete=models.CASCADE)
+
+    studentid= models.CharField(max_length=10)
+
+
+    def __str__(self):
+        return self.user.username

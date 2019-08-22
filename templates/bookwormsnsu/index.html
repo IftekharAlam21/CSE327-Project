@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorms NSU</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+    <link rel="stylesheet" href="assets/css/Hero-Technology.css">
+</head>
+
+<body>
+  {% block body %}
+  <!--Navigation bar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="transmenu">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href={% url 'index' %}>Bookworms NSU</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation"><a href="#">Academic </a></li>
+                    <li role="presentation"><a href="#">Non Academic</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation">
+                        <a href="#"> </a>
+                    </li>
+                    <li role="presentation"><a href={% url 'bookwormsnsu:login' %}>Log In</a></li>
+                    <li role="presentation"><a href={% url 'bookwormsnsu:signup' %}>Sign Up</a></li>
+                    <button class="btn btn-success navbar-btn navbar-right" id= "btn-createad" type="button"> Create an ad</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!--Search Form-->
+    <div class="searchbar">
+     <input class="form-control" align="center" type="text" placeholder="Search" aria-label="Search">
+   </div>
+
+  <!--Hero Image-->
+
+    <div class="jumbotron hero-technology">
+        <h1 id="herotext" class="hero-title"><strong>Welcome to BookWorms NSU</strong></h1>
+        <p class="hero-subtitle">Welcome to your one stop solution to buy,sell and exchange your books with your classmates</p>
+        <p></p>
+    </div>
+    <div id="recent">
+        <div class="jumbotron">
+            <h1 class="text-center"><strong>Recent Posts</strong></h1></div>
+    </div>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones 1</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got2.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones : Fire &amp; Blood</strong></h1>
+                        <h3>Price : 200 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/datas1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>C++ Data Structures</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : New</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/java 1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Java </strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones 1</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones 1</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details</button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones 1</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones 1</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones 1</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details</button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post1">
+        <div class="posts">
+            <div class="jumbotron" id="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail"><img src="assets/img/got1.jpg" width="30%"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="post-title"><strong>Game Of Thrones 1</strong></h1>
+                        <h3>Price : 150 Bdt</h3>
+                        <h3>Condition : Used</h3>
+                        <div class="btn-group" role="group" id="post-button">
+                            <button class="btn btn-primary" type="button">Details </button>
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-flag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section></section>
+    <footer>
+        <h3 class="text-right" id="footer-text">BookWorms NSU,2019</h3></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  {% endblock %}
+</body>
+
+</html>
