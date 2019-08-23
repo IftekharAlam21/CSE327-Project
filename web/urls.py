@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url
-from bookwormsnsu import views
+from signup.views import UserCreateView
+from signup import views
+from django.http import HttpResponsePermanentRedirect
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index')
+    path('', UserCreateView.as_view()),
 ]
