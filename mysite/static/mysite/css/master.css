@@ -1,5 +1,5 @@
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
-  color:#5e5e5e;
+  color:#1a265c;
   background-color:transparent;
   margin-right:10px;
 }
@@ -38,7 +38,7 @@
 
 }
 nav#transmenu.navbar.navbar-inverse.navbar-fixed-top{
-  background:#091645 !important;
+  background:#1a265c !important;
   font-size:15px;
   color:white;
 }
