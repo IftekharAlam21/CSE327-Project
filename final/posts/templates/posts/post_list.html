@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="centerstage">
+    {% for post in post_list %}
+    <div class="jumbotron">
+     <div class="post">
+      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+      <div class="date">
+        <p><strong>Posted on:<strong> {{post.published_date}}</p>
+      </div>
+      <h2> Price: {{post.price}} BDT</h2>
+      <h3> For: {{post.category}} </h3>
+
+    </div>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
