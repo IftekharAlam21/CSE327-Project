@@ -65,7 +65,7 @@ class DraftListView(LoginRequiredMixin,ListView):
 
 class SearchResultsView(ListView):
     model = Post
-    template_name = 'search_results.html'
+    template_name = 'posts/search_results.html'
 
     def get_queryset(self): # new
         query = self.request.GET.get('q')
